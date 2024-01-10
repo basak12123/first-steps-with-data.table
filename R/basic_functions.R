@@ -45,7 +45,7 @@ select_columns <- function(data, columns_to_select) {
     stop("Not all specified columns exist in the table.")
   }
 
-  selected_data <- data[, columns_to_select]
+  selected_data <- data[, columns_to_select, with = F]
 
   return(selected_data)
 }
