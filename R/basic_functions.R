@@ -1,5 +1,3 @@
-library(data.table)
-
 #' Load Data from Different Formats
 #'
 #' The \code{load_data} function reads data from files in different formats using the \code{data.table} package in R.
@@ -10,6 +8,8 @@ library(data.table)
 #' @return A \code{data.table} containing the loaded data.
 #'
 #' @export
+#'
+#' @import data.table
 #'
 load_data <- function(file_path, file_format) {
   if (file_format == "csv") {
@@ -34,6 +34,7 @@ load_data <- function(file_path, file_format) {
 #' @return A new data.table containing only the selected columns.
 #'
 #' @export
+#' @import data.table
 #'
 select_columns <- function(data, columns_to_select) {
   if (!is.data.table(data)) {
