@@ -1,5 +1,6 @@
 library(dt.basics)
 library(testthat)
+library(data.table)
 
 example_data <- data.table(A = c(1, 2, 3), B = c("a", "b", "c"), C = c(10, 20, 30))
 
