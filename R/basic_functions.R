@@ -11,6 +11,15 @@
 #'
 #' @import data.table
 #'
+#' @examples
+#' # Example 1: Load data from a CSV file
+#' file_path_csv <- "path/to/your/data.csv"
+#' data_csv <- load_data(file_path_csv, "csv")
+#'
+#' # Example 2: Load data from an Excel file
+#' file_path_excel <- "path/to/your/data.xlsx"
+#' data_excel <- load_data(file_path_excel, "excel")
+#'
 load_data <- function(file_path, file_format) {
   if (file_format == "csv") {
     data <- fread(file_path)
@@ -35,6 +44,7 @@ load_data <- function(file_path, file_format) {
 #'
 #' @export
 #' @import data.table
+#'
 #'
 select_columns <- function(data, columns_to_select) {
   if (!is.data.table(data)) {
