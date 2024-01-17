@@ -45,7 +45,8 @@ load_data <- function(file_path, file_format) {
 #' @export
 #' @import data.table
 #'
-#'# Example 1: Select specific columns from a data.table
+#' @examples
+#' # Example 1: Select specific columns from a data.table
 #' data_example <- data.table(ID = 1:5, Name = c("John", "Alice", "Bob", "Eva", "Mike"), Age = c(25, 30, 22, 28, 35))
 #' selected_columns <- select_columns(data_example, c("ID", "Name"))
 #'
